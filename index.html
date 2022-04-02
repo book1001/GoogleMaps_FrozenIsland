@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>🌎</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style_maps.css">
+    <link rel="stylesheet" href="style_scrolling.css">
+    <link rel="stylesheet" href="style_cloud.css">
+    <link rel="stylesheet" href="style_cloud_sprite.css">
+    <link rel="stylesheet" href="style_modal.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ewy8kjf.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="script_maps.js"></script>
+
+  </head>
+
+  <body>
+    <!-- <div class="fixed">The Frozen Island</div> -->
+
+    <!-- Scrolling Text -->
+    <!-- <div class="scrolling-container-top">
+      <div class="scrolling-top"></div>
+    </div> -->
+
+
+
+    <!-- Still Image -->
+    <!-- <div class="sprite"></div> -->
+    <!-- <img src="./images_cloud/cloud_bg1.png" style="width: 100%; height: 100%; pointer-events: none; position: absolute; display: grid; z-index: 2;"> -->
+
+
+    <!-- Google Maps -->
+    <iframe src="map.html" style="border: 0" width="100%" height="100%" frameborder="0"></iframe>
+    <!-- <div id="map"></div> -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYT0xiOxC3EscSZXaqt3qpFfZoJ7I918A&callback=initMap&v=weekly" async></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYT0xiOxC3EscSZXaqt3qpFfZoJ7I918A&map_ids=692883d4f6edd5a7&callback=initMap"></script>
+
+
+    <iframe src="./sound/silence.mp3" type=”audio/mp3″ allow="autoplay" id="audio" style="display: none"></iframe>
+    <audio autoplay loop>
+      <source src="./sound/wind1.wav" type="audio/mp3">
+    </audio>
+
+
+
+<!-- Image download button -->
+    <a class="button" href="palm-tree.png" download="FrozenIsland.png">Download File</a>
+
+    <script>
+    fetch(url)
+      .then(resp => resp.blob())
+      .then(blobobject => {
+          const blob = window.URL.createObjectURL(blobobject);
+          const anchor = document.createElement('a');
+          anchor.style.display = 'none';
+          anchor.href = blob;
+          anchor.download = "name.png";
+          document.body.appendChild(anchor);
+          anchor.click();
+          window.URL.revokeObjectURL(blob);
+      })
+      .catch(() => console.log('An error in downloadin gthe file sorry'));
+    </script>
+
+
+
+  </body>
+</html>

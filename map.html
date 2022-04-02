@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>🌎</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style_maps.css">
+    <link rel="stylesheet" href="style_scrolling.css">
+    <link rel="stylesheet" href="style_cloud.css">
+    <link rel="stylesheet" href="style_cloud_sprite.css">
+    <link rel="stylesheet" href="style_modal.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ewy8kjf.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="script_maps.js"></script>
+  </head>
+
+  <body>
+    <div id="map"></div>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYT0xiOxC3EscSZXaqt3qpFfZoJ7I918A&callback=initMap&v=weekly" async></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYT0xiOxC3EscSZXaqt3qpFfZoJ7I918A&map_ids=692883d4f6edd5a7&callback=initMap"></script>
+
+
+
+
+    <div class="scrolling-container-top">
+      <div class="scrolling-top"></div>
+    </div>
+
+    <div class="scrolling-container-bottom">
+      <div class="scrolling-bottom"></div>
+    </div>
+
+    <!-- Cloud -->
+    <div id="background-wrap1">
+      <div class="x1">
+        <div class="sprite1"></div>
+      </div>
+    </div>
+
+    <div id="background-wrap2">
+      <div class="x2">
+        <div class="sprite2"></div>
+      </div>
+
+      <!-- <div class="x3">
+        <img src="./images_cloud/cloud4.png">
+      </div>
+
+      <div class="x4">
+          <div class="cloud"></div>
+      </div>
+
+      <div class="x5">
+          <div class="cloud"></div>
+      </div> -->
+    </div>
+
+
+    <!-- Modal: Button -->
+    <button class="modal-button btn1" href="#myModal1">Info</button>
+    <!-- Modal -->
+    <div id="myModal1" class="modal modal1">
+
+      <!-- Modal: content -->
+      <div class="modal-content modal-content1">
+        <div class="modal-body">
+          <p>Information Page</p>
+          <p>Information text...</p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <button class="btn2" onclick="eyeview()">👁</button>
+
+    <div id="eyeviewShow" style="display:none; overflow: hidden;">
+      <img src="./images_info/eyeview1.png" style="width: 100%; height: 100%; pointer-events: none; position: absolute; display: grid; z-index: 8; top:0px; left:0px">
+    </div>
+    <script src="script_eyeview.js"></script>
+
+
+    <!-- Modal: Button -->
+    <button class="modal-button btn3" href="#myModal2">Open Modal</button>
+
+    <!-- Modal -->
+    <div id="myModal2" class="modal modal2">
+      <img src="./images_info/eyeview1.png" style="width: 100%; height: 100%; pointer-events: none; position: absolute; display: grid; z-index: 8;">
+      <!-- Modal: content -->
+      <!-- <div class="modal-content modal-content2">
+        <div class="modal-header">
+          <span class="close">×</span>
+          <h2>Modal Header</h2>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the Modal Body</p>
+          <p>Some other text...</p>
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
+      </div> -->
+    </div>
+    <script src="script_modal.js"></script>
+
+
+    <!-- Modal: Button -->
+    <img src="./icons/google_zoom.svg" class="custom-zoom-icon">
+
+
+  </body>
+</html>
