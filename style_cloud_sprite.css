@@ -1,0 +1,38 @@
+.sprite1 {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('./images_cloud/cloud_sprite1.png');
+    transform: scale(5);
+    animation: play 4s steps(50) infinite;
+}
+
+.sprite2 {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('./images_cloud/cloud_sprite2.png');
+    transform: scale(5);
+    animation: play 3s steps(50) infinite;
+}
+
+@-webkit-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -22500px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -22500px; }
+}
+
+@keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -22500px; }
+}
