@@ -43,13 +43,28 @@
 
 
     <iframe src="./sound/silence.mp3" type=”audio/mp3″ allow="autoplay" id="audio" style="display: none"></iframe>
-    <audio autoplay loop="playAudio">
-      <source src="./sound/wind1.wav">
+    <audio autoplay loop>
+      <source src="./sound/wind1.wav" type="audio/mp3">
     </audio>
 
-    <iframe src="sound.html" style="border: 0" width="0px" height="0px" frameborder="0"></iframe>
+    <!-- <iframe src="sound.html" style="border: 0" width="0px" height="0px" frameborder="0"></iframe> -->
+
+<script>
+    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    if (!isChrome){
+        $('#iframeAudio').remove()
+    }
+    else {
+        $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background
+    }
 
 
+    document.addEventListener('click', musicPlay);
+function musicPlay() {
+    document.getElementById('ID').play();
+    document.removeEventListener('click', musicPlay);
+}
+</script>
 
 <!-- Image download button -->
     <!-- <a class="button" href="palm-tree.png" download="FrozenIsland.png">Download File</a>
