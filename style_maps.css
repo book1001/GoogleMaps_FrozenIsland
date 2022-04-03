@@ -1,8 +1,8 @@
 @font-face {
   font-family : 'bb-book';
   font-weight: 400;
-  src: url("/fonts/bb-book-mono.woff") format('woff'),
-        url("/fonts/bb-book-mono.woff2") format("woff2"),
+  src: url("./fonts/bb-book-mono.woff") format('woff'),
+        url("./fonts/bb-book-mono.woff2") format("woff2"),
 }
 
 html {
