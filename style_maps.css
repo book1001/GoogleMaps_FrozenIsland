@@ -1,6 +1,5 @@
 @font-face {
   font-family : 'bb-book-mono';
-  font-weight: 400;
   src: url("./fonts/bb-book-mono.woff") format('woff'),
         url("./fonts/bb-book-mono.woff2") format("woff2"),
         url("./fonts/bb-book-mono.otf") format('otf'),
@@ -43,8 +42,7 @@ body {
 }
 
 .gm-style-iw-d {
-  font-family: bb-book-mono;
-  font-weight: 400;
+  font-family: bb-book-mono, sans-serif;
   /* font-family: FKRasterGroteskTrial-Blended; */
   color: #000000;
   /* color: #00ff00; */
@@ -190,8 +188,7 @@ button.gm-control-active > img {
 }
 
 .gm-iv-profile-link{
-  font-family: bb-book-mono !important;
-  font-weight: 400 !important;
+  font-family: bb-book-mono, sans-serif !important;
   font-size: 6em !important;
   /* margin-top: 100px !important; */
   color: #ffffff !important;
@@ -201,8 +198,7 @@ button.gm-control-active > img {
 
 
 .gm-iv-short-address-description{
-  font-family: bb-book-mono !important;
-  font-weight: 400 !important;
+  font-family: bb-book-mono, sans-serif !important;
   font-size: 6em !important;
   /* margin-top: 100px !important; */
   color: #ffffff !important;
@@ -221,16 +217,14 @@ button.gm-control-active > img {
 
 .gm-iv-long-address-description{
   display: none !important;
-  font-family: bb-book-mono !important;
-  font-weight: 400 !important;
+  font-family: bb-book-mono, sans-serif !important;
   font-size: 3em !important;
   margin-top: 100px !important;
 }
 
 .gm-iv-address-link > a{
   /* display: none; */
-  font-family: bb-book-mono !important;
-  font-weight: 400 !important;
+  font-family: bb-book-mono, sans-serif !important;
   font-size: 3em !important;
   color: red !important;
   margin-top: 400px !important;
