@@ -43,14 +43,16 @@
 
 
     <iframe src="./sound/silence.mp3" type=”audio/mp3″ allow="autoplay" id="audio" style="display: none"></iframe>
-    <audio autoplay loop>
-      <source src="./sound/wind1.wav" type="audio/mp3">
+    <audio autoplay loop="playAudio">
+      <source src="./sound/wind1.wav">
     </audio>
+
+    <iframe src="sound.html" style="border: 0" width="0px" height="0px" frameborder="0"></iframe>
 
 
 
 <!-- Image download button -->
-    <a class="button" href="palm-tree.png" download="FrozenIsland.png">Download File</a>
+    <!-- <a class="button" href="palm-tree.png" download="FrozenIsland.png">Download File</a>
 
     <script>
     fetch(url)
@@ -66,7 +68,7 @@
           window.URL.revokeObjectURL(blob);
       })
       .catch(() => console.log('An error in downloadin gthe file sorry'));
-    </script>
+    </script> -->
 
 
 
