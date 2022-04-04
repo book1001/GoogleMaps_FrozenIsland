@@ -4,10 +4,10 @@
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     mapId: "692883d4f6edd5a7",
-    center: { lat: -50.8523641, lng: -12.9344826 },
+//     center: { lat: -50.8523641, lng: -12.9344826 },
+//     zoom: 9,
+    center: { lat: 41.6923581, lng: -71.646424 },
     zoom: 9,
-    // center: { lat: 41.6923581, lng: -71.646424 },
-    // zoom: 9,
 
     mapTypeControl: false,
     fullscreenControl: false,
