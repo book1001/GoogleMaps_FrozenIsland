@@ -1,8 +1,8 @@
 
 .btn1 {
-  /* display: none; */
+  display: none;
 
-  bottom: 280px;
+  /* bottom: 280px;
   right: 10px;
 
   background-color: #ffffff;
@@ -13,24 +13,26 @@
   height: 50px;
   cursor: pointer;
   touch-action: none;
-  position: fixed;
+  position: fixed; */
 }
 
 .btn2 {
-  display: none;
+  /* display: none; */
 
-  /* bottom: 200px;
-  right: 10px;
+  bottom: 96px;
+  left: 10px;
 
-  background-color: #ffffff;
+  background-color: transparent;
   border: 0px;
   box-shadow: rgb(0 0 0 /30%) 0px 1px 4px -1px;
-  border-radius: 2px;
-  width: 40px;
-  height: 40px;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   touch-action: none;
-  position: fixed; */
+  position: fixed;
+
+  z-index: 3;
 }
 
 .btn3 {
