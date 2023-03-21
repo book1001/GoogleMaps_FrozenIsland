@@ -3,6 +3,8 @@
   src: url("./fonts/bb-book-mono.woff") format('woff'),
         url("./fonts/bb-book-mono.woff2") format("woff2"),
         url("./fonts/bb-book-mono.otf") format('otf'),
+  font-family : 'FKGroteskMonoTrial';
+  src: url("./fonts/FKGroteskMonoTrial-Regular.otf") format('otf'),
 }
 
 html {
@@ -99,6 +101,70 @@ div.fixed {
 }
 
 
+/* Info */
+
+/* Info Window */
+.gm-style-iw-c {
+  padding-top: 11px !important;
+  padding-bottom: 0px !important;
+  padding-left: 13px !important;
+  padding-right: 13px !important;
+}
+
+.gm-style .gm-style-iw-d::-webkit-scrollbar {
+  display: none;
+  width: 13px;
+  height: 0px;
+}
+
+.gm-style .gm-style-iw-c {
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%) !important;
+  border-radius: 12px !important;
+  background-color: transparent !important;
+}
+
+.gm-style .gm-style-iw-t::after {
+  background: linear-gradient(45deg,rgba(255,255,255,0) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%) transparent;
+  /* background: linear-gradient(45deg,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%) #fff; */
+  box-shadow: 0px 0px 0px 0 rgb(255 255 255 / 0%);
+}
+
+/* Info Window Text */
+#firstHeading {
+  padding-bottom: 10px;
+  font-size: 1rem;
+}
+
+#bodyContent {
+  padding-bottom: 1px;
+  /* text-align: center; */
+}
+
+.gm-style-iw-d {
+  font-family: bb-book-mono, sans-serif;
+  /* font-family: FKGroteskMonoTrial-Regular; */
+  /* font-family: FKRasterGroteskTrial-Blended; */
+  color: #ffffff;
+  padding: 0px;
+  text-align: center;
+}
+
+
+/* Info Window x icon */
+button.gm-ui-hover-effect {
+  top: auto !important;
+  right: 1px !important;
+  bottom: 1px !important;
+}
+
+
+/* Info Window images */
+.info-image {
+  width: 100%;
+  margin-top: 13px;
+  border-radius: 50%;
+}
+
 /* Buttons Style */
 
 /* Pegman */
@@ -185,6 +251,7 @@ button.gm-control-active > img {
 
 .gm-iv-address-description{
   max-width: 100% !important;
+  transform: translate(-25px, -14px) !important;
 }
 
 .gm-iv-profile-url > a{
@@ -235,7 +302,7 @@ button.gm-control-active > img {
   font-size: 6em !important;
   color: transparent !important;
   /* color: red !important; */
-  margin-top: 0px !important;
+  transform: translate(-25px, -14px) !important;
 }
 
 .gm-iv-marker {
@@ -244,6 +311,15 @@ button.gm-control-active > img {
 
 .gm-iv-back-icon-background {
   background-image: url("palm-tree.svg") !important;
+}
+
+.gm-iv-vertical-separator {
+  display: none;
+}
+
+/* View on Google Maps: back icon */
+.gm-iv-back {
+  display: none;
 }
 
 

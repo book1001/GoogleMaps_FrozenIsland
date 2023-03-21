@@ -10,8 +10,8 @@
 .scrolling-top {
   background: url("./scrolling/scrolling_top.svg") repeat-x;
   height: 78px;
-  width: 3440px;/* The image width x 2 */
-  animation: slide-top 10s linear infinite;
+  width: 5450px;/* The image width x 2 */
+  animation: slide-top 19s linear infinite;
 }
 
 @keyframes slide-top {
@@ -19,7 +19,7 @@
     transform: translate(0);
   }
   100% {
-    transform: translate(-1720px); /* The image width */
+    transform: translate(-2725px); /* The image width */
   }
 }
 
@@ -36,8 +36,8 @@
 .scrolling-bottom {
   background: url("./scrolling/scrolling_top.svg") repeat-x;
   height: 78px;
-  width: 3440px;/* The image width x 2 */
-  animation: slide-bottom 10s linear infinite;
+  width: 5450px;/* The image width x 2 */
+  animation: slide-bottom 19s linear infinite;
   z-index: 2;
 }
 
@@ -46,7 +46,7 @@
     transform: translate(0);
   }
   100% {
-    transform: translate(-1720px); /* The image width */
+    transform: translate(-2725px); /* The image width */
   }
 }
 

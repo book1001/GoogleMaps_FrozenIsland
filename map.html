@@ -64,18 +64,35 @@
 
 
     <script>
-      let str = "11s@#345d";
 
-      window.addEventListener("load", function(event) {
-        console.log("Finished loading");
+      // let str = "11s@#345d";
+      //
+      // window.addEventListener("load", function(event) {
+      //   console.log("Finished loading");
+      //
+      //   if(document.getElementsByClassName('gm-style')[0].style.visibility="visible") {
+      //     console.log("gm-style가 hidden");
+      //     // document.getElementById('eyeviewShow').style.visibility="visible";
+      //   }else{
+      //     console.log("gm-style가 hidden되지 않음");
+      //     // document.getElementById('eyeviewShow').style.visibility="hidden";
+      //   }
+      // });
 
-        if(document.getElementsByClassName('gm-iv-address-link')[0] !== undefined) {
-          console.log("gm-iv-address-link가 포함됨");
-        }else{
-          console.log("gm-iv-address-link가 포함되지 않음");
-        }
-      });
 
+      // let str = "11s@#345d";
+      //
+      // window.addEventListener("load", function(event) {
+      //   console.log("Finished loading");
+      //
+      //   if(document.getElementsByClassName('gm-style')[0] !== undefined) {
+      //     console.log("gm-style가 hidden");
+      //     document.getElementById('eyeviewShow').style.visibility="visible";
+      //   }else{
+      //     console.log("gm-style가 hidden되지 않음");
+      //     document.getElementById('eyeviewShow').style.visibility="hidden";
+      //   }
+      // });
 
       // window.addEventListener("load", function(event) {
       //   console.log("Finished loading");
@@ -112,7 +129,11 @@
     </div>
 
 
-    <button class="btn2" onclick="eyeview()"><img src="./icons/icon_eyes.png"></button>
+    <button class="btn2" onclick="eyeview()">
+      <img src="./icons/icon_eyes.png">
+      <input id="latitude" type="" value="0.0">
+      <input id="longitude" type="" value="0.0">
+    </button>
 
     <div id="eyeviewShow" style="display:none; overflow: hidden;">
       <img src="./images_info/eyeview1.png" style="width: 100%; height: 100%; pointer-events: none; position: absolute; display: grid; z-index: 8; top:0px; left:0px">
