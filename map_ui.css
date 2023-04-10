@@ -1,0 +1,30 @@
+
+#latitude {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: -230px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  z-index: 4;
+
+  background-color: transparent;
+  padding: 0px;
+  border-width: 0px;
+  mix-blend-mode: difference;
+}
+
+#longitude {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: -230px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  z-index: 4;
+
+  background-color: transparent;
+  padding: 0px;
+  border-width: 0px;
+  mix-blend-mode: difference;
+}

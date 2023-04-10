@@ -5,6 +5,8 @@
     <link rel="shortcut icon" href="favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="map_ui.css">
     <link rel="stylesheet" href="style_maps.css">
     <link rel="stylesheet" href="style_scrolling.css">
     <link rel="stylesheet" href="style_cloud.css">
@@ -25,19 +27,33 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYT0xiOxC3EscSZXaqt3qpFfZoJ7I918A&callback=initMap&v=weekly" async></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYT0xiOxC3EscSZXaqt3qpFfZoJ7I918A&map_ids=692883d4f6edd5a7&callback=initMap"></script>
 
+    <div id="StreetViewInfo" class="font-info" style="display: grid; grid-template-columns: 100%; z-index: 10; text-indent: 0px;">
+
+      Welcome to Frozen Island. This website collects intriguing moments captured by Google Maps as an archive of frozen time around the world. Click on the yellow circles to view the moments, and zoom in on the circles to drop your Google Maps avatar into the place. You will encounter plenty of strange and beautiful moments in the world.
+      <!-- <div style="display: grid; grid-template-columns: 138px auto;">
+        <h3>
+          RISD DM ✕ GD
+        </h3>
+        <h3>
+          Wintersession 2023
+        </h3>
+      </div> -->
+    </div>
+    <!-- <div style="overflow: hidden;">
+      <img src="./images_info/eyeview1.png" style="width: 100%; height: 100%; pointer-events: none; position: absolute; display: grid; top:0px; left:0px">
+    </div> -->
 
 
-
-    <div class="scrolling-container-top">
+    <!-- <div class="scrolling-container-top">
       <div class="scrolling-top"></div>
     </div>
 
     <div class="scrolling-container-bottom">
       <div class="scrolling-bottom"></div>
-    </div>
+    </div> -->
 
     <!-- Cloud -->
-    <div id="background-wrap1">
+    <!-- <div id="background-wrap1">
       <div class="x1">
         <div class="sprite1"></div>
       </div>
@@ -47,19 +63,7 @@
       <div class="x2">
         <div class="sprite2"></div>
       </div>
-
-      <!-- <div class="x3">
-        <img src="./images_cloud/cloud4.png">
-      </div>
-
-      <div class="x4">
-          <div class="cloud"></div>
-      </div>
-
-      <div class="x5">
-          <div class="cloud"></div>
-      </div> -->
-    </div>
+    </div> -->
 
 
 
@@ -108,8 +112,11 @@
       // window.addEventListener("click", function(event) {
       //   console.log("All resources finished loading!");
       // });
-
     </script>
+
+    <input id="latitude" class="font-latlong" type="" value="0.0">
+    <input id="longitude" class="font-latlong" type="" value="0.0">
+
 
 
 
@@ -119,26 +126,56 @@
     <div id="myModal1" class="modal modal1">
 
       <!-- Modal: content -->
-      <div class="modal-content modal-content1">
-        <div class="modal-body">
+      <div class="modal-content modal-content1 font-info">
+        I liked staring at the edge of the water. The stretched horizontal line of the sea embraced infinite possibilities and drove me to imagine what lay beyond. Curious about the world beyond its edges, I yearned to cross the sea and dreamed about reaching a place I'd never been. Just as my long-time dream seemed to be coming true, the pandemic occurred. I lost my confidence. Will I ever cross the sea? Whenever that question arose, I went into Google Maps and walked around the presumable place I would live. For me, Google Maps was hope and proof to remind me the places I desired to reach genuinely existed.
+
+During the pandemic, digital and real-world experiences became one. The debate over which was more authentic no longer matters. Individuals we meet on Zoom are real people, not just a collection of pixels. Likewise, Street View on Google Maps is founded upon reality. It is the real representation of landscapes we may have once chanced upon. Though we experience Google Maps only via screens, it is alive with the ceaselessly substituted copies of our present.
+
+
+
+
+While traversing virtual streets, I bumped into many strange scenes. As Google Maps does not back up the earth every second, the collected data, which is made up of different times and locations, is sloppily stitched onto one another, making up the rag of time. The roughly glued patches bear wormholes that connect disparate points in time and locations: for example, when you hit the top area of this blurred wormhole in this picture, you can travel in time from 2019 to 2017.
+
+Along with the joy of exploring, I randomly dropped the Google Maps avatar onto the map and collected weird footage in addition to wormholes. Perhaps, the strangest scene I found would be the watermarks on the sky in Street View, which reminded me of the sky in the 1998 film, "Truman Show." In this movie, there is a scene where a stage light falls from the sky. It implies that Seahaven Island has “a layer” separating the island from the outside. The sky of Seahaven Island is the layer. Beyond its sky, there are people observing the island from above via screens.
+
+Google Maps also has its own layer and observers. When we drop the avatar onto the map, it plummets through the map layer and penetrates the watermarked sky until it lands on the Street View. While the avatar is walking around, we as users are looking down the Street outside the sky, beyond the screens of our monitors or smartphones.
+
+The similarities between Google Maps and Truman Show stretched my initial idea and led me to create my first Google Maps project, "Frozen Island," which is an archive of frozen time. Selected captured moments are marked on the map, and viewers can explore the island by dropping the Google Maps avatar into the pipes on the island. This project was created as a website but also displayed on an old TV as a way to represent the connection to Truman Show. Users can use a joystick to explore the island, similar to the way people flip through TV channels with remotes in Truman Show. With the concept that we are looking down on Google Maps from above, clouds are floating on Frozen Island.
+
+
+        <!-- <div class="modal-body">
           <p>Information Page</p>
           <p>Information text...</p>
-        </div>
+        </div> -->
 
       </div>
     </div>
 
-
-    <button class="btn2" onclick="eyeview()">
-      <img src="./icons/icon_eyes.png">
+    <!-- <button class="btn2" onclick="eyeview()">
       <input id="latitude" type="" value="0.0">
-      <input id="longitude" type="" value="0.0">
+    </button> -->
+
+    <!-- <div style="position: fixed; width: 100%; height: 100%;">
+      <button class="btn2" onclick="eyeview()" style="position: fixed; top: 50%; transform: rotate(-90deg); -webkit-transform: rotate(-90deg); right: 0px;">
+        <input id="longitude" type="" value="0.0">
+      </button>
+    </div> -->
+
+    <button id="btnLatLong" class="btn2" onclick="eyeview()">
+      <img src="./icons/icon_eyes.png">
+      <!-- <input id="latitude" type="" value="0.0">
+      <input id="longitude" type="" value="0.0"> -->
     </button>
 
     <div id="eyeviewShow" style="display:none; overflow: hidden;">
       <img src="./images_info/eyeview1.png" style="width: 100%; height: 100%; pointer-events: none; position: absolute; display: grid; z-index: 8; top:0px; left:0px">
     </div>
     <script src="script_eyeview.js"></script>
+
+
+    <button id="back" class="btn2" style="display:none; bottom: 10px; pointer-events: none;">
+      <img src="./icons/icon_back.png">
+    </button>
 
 
     <!-- Modal: Button -->
@@ -166,7 +203,7 @@
 
 
     <!-- Submit -->
-    <form>
+    <!-- <form>
       <input type="button" value="      " onclick="msg()" style="cursor: alias; position: absolute; display: grid; z-index: 8; background-color:transparent; border:0px; bottom: 150px; left: 10px;">
     </form>
 
@@ -174,13 +211,11 @@
     function msg() {
       alert("Your finding was submitted!");
     }
-    </script>
-
+    </script> -->
 
 
     <!-- Modal: Button -->
     <img src="./icons/google_zoom.svg" class="custom-zoom-icon">
-
 
   </body>
 </html>
