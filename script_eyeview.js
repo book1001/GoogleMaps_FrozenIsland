@@ -35,10 +35,12 @@
     var y = document.getElementById("eye_off");
     for (let i = 0; i < x.length; i++) {
       if (x[i].style.opacity === "0") {
+        x[i].style.transition = "opacity 0.3s";
         x[i].style.opacity = "1";
         e.style.display = "block";
         y.style.display = "none";
       } else {
+        x[i].style.transition = "opacity 0.3s";
         x[i].style.opacity = "0";
         e.style.display = "none";
         y.style.display = "block";
