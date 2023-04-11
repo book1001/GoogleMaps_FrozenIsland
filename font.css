@@ -34,13 +34,13 @@
 /* text: drag color ================================================ */
 
 ::selection {
-  color: white;
-  background: black;
+  color: black;
+  background: white;
 }
 
 ::-moz-selection { /* Code for Firefox */
-  color: white;
-  background: black;
+  color: black;
+  background: white;
 }
 
 
@@ -62,7 +62,7 @@
   /* left: 50%;
   transform: translate(-50%, 0); */
   background: transparent;
-  /* mix-blend-mode: difference; */
+  mix-blend-mode: difference;
 }
 
 /* font: latitude / longitude ================================================ */

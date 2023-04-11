@@ -12,6 +12,7 @@
   padding: 0px;
   border-width: 0px;
   mix-blend-mode: difference;
+  pointer-events: none;
 }
 
 #longitude {
@@ -27,4 +28,10 @@
   padding: 0px;
   border-width: 0px;
   mix-blend-mode: difference;
+  pointer-events: none;
 }
+/*
+input:focus {
+  border: none;
+  background:red;
+} */

@@ -38,7 +38,9 @@ function initMap() {
       document.getElementById('back').style.display="block";
 
       document.getElementById('StreetViewInfo').style.display="none";
-      document.getElementById('btnLatLong').style.display="block";
+
+
+      // document.getElementById('btnLatLong').style.display="block";
 
       // document.getElementById('map').style.display="none";
       // var x = document.getElementsByClassName("gm-iv-container");
@@ -68,8 +70,7 @@ function initMap() {
       document.getElementById('back').style.display="none";
 
       document.getElementById('StreetViewInfo').style.display="grid";
-      document.getElementById('btnLatLong').style.display="none";
-
+      // document.getElementById('btnLatLong').style.display="none";
 
 
       // document.getElementById('latitude').style.display="none";

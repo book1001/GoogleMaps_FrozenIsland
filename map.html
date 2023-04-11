@@ -16,11 +16,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
 
+    <!-- Material Design Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="script_maps.js"></script>
   </head>
 
   <body>
+    <style>
+      .material-symbols-sharp {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 200,
+        'opsz' 48
+      }
+    </style>
+
     <div id="map"></div>
 
 
@@ -121,7 +134,7 @@
 
 
     <!-- Modal: Button -->
-    <button class="modal-button btn1" href="#myModal1">Info</button>
+    <button class="modal-button btn1" href="#myModal1" style="display:none;">Info</button>
     <!-- Modal -->
     <div id="myModal1" class="modal modal1">
 
@@ -161,10 +174,16 @@ The similarities between Google Maps and Truman Show stretched my initial idea a
       </button>
     </div> -->
 
-    <button id="btnLatLong" class="btn2" onclick="eyeview()">
-      <img src="./icons/icon_eyes.png">
-      <!-- <input id="latitude" type="" value="0.0">
-      <input id="longitude" type="" value="0.0"> -->
+    <button id="btnLatLong" class="btn_eye" onclick="eyeview()">
+    </button>
+
+    <button id="eye_on" class="btn_eye" style="pointer-events: none;">
+      <!-- <img src="./icons/icon_eyes_off.png"> -->
+      <span class="material-symbols-sharp" style="font-size: 43px; color: white;">visibility_off</span>
+    </button>
+    <button id="eye_off" class="btn_eye" style="display:none; pointer-events: none;">
+      <!-- <img src="./icons/icon_eyes2.png"> -->
+      <span class="material-symbols-sharp" style="font-size: 43px; color: white;">visibility</span>
     </button>
 
     <div id="eyeviewShow" style="display:none; overflow: hidden;">
@@ -173,8 +192,9 @@ The similarities between Google Maps and Truman Show stretched my initial idea a
     <script src="script_eyeview.js"></script>
 
 
-    <button id="back" class="btn2" style="display:none; bottom: 10px; pointer-events: none;">
-      <img src="./icons/icon_back.png">
+    <button id="back" class="btn2" style="display:none; pointer-events: none;">
+      <!-- <img src="./icons/icon_back2.png"> -->
+      <span class="material-symbols-sharp" style="font-size: 50px; color: white; font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 200, 'opsz' 48;">arrow_back</span>
     </button>
 
 
@@ -215,7 +235,12 @@ The similarities between Google Maps and Truman Show stretched my initial idea a
 
 
     <!-- Modal: Button -->
-    <img src="./icons/google_zoom.svg" class="custom-zoom-icon">
+    <div class="custom-zoom-icon">
+      <span class="material-symbols-sharp" style="font-size: 54px; color: white; font-variation-settings: 'FILL' 0, 'wght' 530, 'GRAD' 200, 'opsz' 48;">add</span>
+      <span class="material-symbols-sharp" style="position:fixed; bottom: 1px; font-size: 54px; color: white; font-variation-settings: 'FILL' 0, 'wght' 530, 'GRAD' 200, 'opsz' 48;">remove</span>
+    </div>
+
+    <!-- <img src="./icons/google_zoom.svg" class="custom-zoom-icon"> -->
 
   </body>
 </html>

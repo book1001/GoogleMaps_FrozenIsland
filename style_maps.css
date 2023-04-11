@@ -122,8 +122,8 @@ div.fixed {
 /* Map BG color */
 
 #map > div {
-  background-color: #0f1015 !important; /* For browsers that do not support gradients */
-  background-image: repeating-linear-gradient(180deg, #1500ff 0%, #1500ff 50%, #0f1015 50%, #0f1015 100%);
+  background-color: #000000 !important; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(180deg, #1401fa 0%, #1401fa 50%, #000000 50%, #000000 100%);
 }
 
 
@@ -192,7 +192,7 @@ div.fixed {
   left: 0px !important;
   width: 100% !important;
   height: 100% !important;
-  background: radial-gradient(100% 95% at center, transparent calc(50% - 20px), black 0%) !important;
+  /* background: radial-gradient(100% 95% at center, transparent calc(50% - 20px), black 0%) !important; */
   /* background-position: 50% 50% !important; */
   /* background-image: url("./images_info/eye-clean.png") !important; */
   background-size: 100% 100% !important;
@@ -238,6 +238,19 @@ button.gm-ui-hover-effect {
   width: 50px !important;
   height: 50px !important;
   margin-left: -10px;
+  z-index: 10000000 !important;
+
+  left: 8px !important;
+  /* position: fixed !important;
+  top: auto !important;
+  left: auto !important;
+  bottom: 100px !important;
+  right: 20px !important;
+  pointer-events:all !important; */
+}
+
+.gm-svpc < div {
+  z-index: 10000000 !important;
 }
 
 
@@ -245,9 +258,16 @@ button.gm-ui-hover-effect {
 .gmnoprint{
   /* display: none; */
   /* z-index: 10 !important; */
-  z-index: 10000000 !important;
+
   margin-bottom: 0px;
   margin-left: -5px;
+  /* background: red !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none !important; */
 }
 
 .gmnoprint > div {
@@ -268,19 +288,38 @@ button.gm-control-active > img {
 
 .custom-zoom-icon{
   position: fixed;
-  bottom: 0px;
+  bottom: 10px;
   right: 15px;
   width: 40px;
   height: 91px;
   z-index: 5;
   pointer-events: none;
+  mix-blend-mode: difference;
+  text-shadow: 0px 1px gray;
 }
 
 /* Bottom Water Mark */
 .gm-style-cc{
-  display: none;
+  /* display: none; */
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: auto !important;
+  bottom: auto !important;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none !important;
+  background: radial-gradient(100% 95% at center, transparent calc(50% - 60px), black 0%) !important;
+  background-position: 50% 50% !important;
+  opacity: 1;
+  /* background-image: url("./images_info/eye-clean.png") !important; */
+  background-size: 100% 100% !important;
+  background-color: transparent !important;
 }
 
+.gm-style-cc > div {
+  display: none !important;
+}
 
 
 /* div.gm-style > div > div {
@@ -388,6 +427,7 @@ button.gm-control-active > img {
 } */
 
 .gm-iv-container{
+  /* display: none; */
   /* background-color: red !important; */
   border-right: 0px !important;
   width: 100% !important;
@@ -397,8 +437,9 @@ button.gm-control-active > img {
   /* background: radial-gradient(100% 95% at center, transparent calc(50% - 20px), black 0%) !important;
   background-size: 100% 100% !important;
   background-position: 50% 50% !important; */
-
-  background-image: url("./images_info/eye-clean.png") !important;
+  opacity: 0;
+  pointer-events: none !important;
+  /* background-image: url("./images_info/eye-clean.png") !important;
   background-size: 100% 100% !important;
   opacity: 1;
   background-color: transparent !important;
@@ -406,8 +447,7 @@ button.gm-control-active > img {
   top: 0px !important;
   left: 0px !important;
   margin: 0 !important;
-  pointer-events: none !important;
-
+  pointer-events: none !important; */
   /* mix-blend-mode: difference !important; */
 }
 
@@ -450,7 +490,7 @@ button.gm-control-active > img {
   /* display: none; */
   position: fixed !important;
   left: 0 !important;
-  bottom: 0 !important;
+  bottom: 50px !important;
   padding: 30px !important;
   opacity: 0 !important;
 
