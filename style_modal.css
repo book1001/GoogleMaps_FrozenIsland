@@ -26,6 +26,14 @@
   opacity: 0;
 }
 
+#eye_on {
+  display: none;
+}
+
+#eye_off {
+  display: none;
+}
+
 .btn_eye{
   /* display: none; */
   bottom: -2px;

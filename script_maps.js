@@ -39,6 +39,9 @@ function initMap() {
 
       document.getElementById('StreetViewInfo').style.display="none";
 
+      document.getElementById('btnLatLong').style.display="block";
+      document.getElementById('eye_on').style.display="block";
+
 
       // document.getElementById('btnLatLong').style.display="block";
 
@@ -70,6 +73,15 @@ function initMap() {
       document.getElementById('back').style.display="none";
 
       document.getElementById('StreetViewInfo').style.display="grid";
+
+      var changeClass = document.getElementsByClassName("gm-style-cc");
+      for (let i = 0; i < changeClass.length; i++) {
+        changeClass[i].style.opacity = "1";
+      }
+      document.getElementById('btnLatLong').style.display="none";
+      document.getElementById('eye_on').style.display="none";
+      document.getElementById('eye_off').style.display="none";
+
       // document.getElementById('btnLatLong').style.display="none";
 
 
