@@ -2,20 +2,20 @@
 
 @font-face {
   font-family: 'FKGroteskMonoTrial-Regular';
-  src: url('./font/FKGroteskMonoTrial-Regular.woff') format('woff');
-  src: url('./font/FKGroteskMonoTrial-Regular.woff2') format('woff2');
+  src: url('./fonts/FKGroteskMonoTrial-Regular.woff') format('woff');
+  src: url('./fonts/FKGroteskMonoTrial-Regular.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'FKGroteskSemiMonoTrial-Regular';
-  src: url('./font/FKGroteskSemiMonoTrial-Regular.woff') format('woff');
-  src: url('./font/FKGroteskSemiMonoTrial-Regular.woff2') format('woff2');
+  src: url('./fonts/FKGroteskSemiMonoTrial-Regular.woff') format('woff');
+  src: url('./fonts/FKGroteskSemiMonoTrial-Regular.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'ABCRepro-Regular';
-  src:  url('ABCRepro-Regular.woff2') format('woff2'),
-        url('ABCRepro-Regular.woff') format('woff');
+  src:  url('./fonts/ABCRepro-Regular.woff2') format('woff2'),
+        url('./fonts/ABCRepro-Regular.woff') format('woff');
 }
 
 
