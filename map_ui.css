@@ -4,12 +4,16 @@
   position: fixed;
   top: 50%;
   left: -230px;
+  margin: 0;
+  padding: 0;
   transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg); /* Safari */
+  -moz-transform: rotate(90deg); /* Firefox */
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -o-transform: rotate(90deg); /* Opera */
   z-index: 4;
 
   background-color: transparent;
-  padding: 0px;
   border-width: 0px;
   mix-blend-mode: difference;
   pointer-events: none;
@@ -20,12 +24,16 @@
   position: fixed;
   top: 50%;
   right: -230px;
+  margin: 0;
+  padding: 0;
   transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg); /* Safari */
+  -moz-transform: rotate(90deg); /* Firefox */
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -o-transform: rotate(90deg); /* Opera */
   z-index: 4;
 
   background-color: transparent;
-  padding: 0px;
   border-width: 0px;
   mix-blend-mode: difference;
   pointer-events: none;
