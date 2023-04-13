@@ -1,0 +1,41 @@
+@media only screen and (max-width:600px) {   /* For tablets: */
+  .gm-style-cc{
+    background: radial-gradient(100% 100% at center, transparent calc(58% - 50px), black 0%) !important;
+  }
+
+  .gm-iv-profile-link {
+    font-size: 34px !important;
+  }
+
+  .gm-iv-short-address-description {
+    font-size: 34px !important;
+  }
+
+  .font-latlong {
+    font-size: 34px;
+  }
+
+  #latitude {
+    top: 41%;
+    left: -164px;
+  }
+
+  #longitude {
+    top: 41%;
+    right: -164px;
+  }
+
+  .font_ui_eye {
+    font-size: 37px !important;
+  }
+
+  .font_ui_back {
+    font-size: 45px !important;
+  }
+
+  .font_ui_zoom {
+    font-size: 49px !important;
+  }
+
+
+}

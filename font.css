@@ -67,6 +67,27 @@
   mix-blend-mode: difference;
 }
 
+
+/* font: UI ================================================ */
+
+.font_ui_eye {
+  font-size: 43px !important;
+  color: white !important;
+}
+
+.font_ui_back {
+  font-size: 50px !important;
+  color: white !important;
+  font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 200, 'opsz' 48 !important;
+}
+
+.font_ui_zoom {
+  font-size: 54px !important;
+  color: white !important;
+  font-variation-settings: 'FILL' 0, 'wght' 530, 'GRAD' 200, 'opsz' 48 !important;
+}
+
+
 /* font: latitude / longitude ================================================ */
 .font-latlong {
   font-family: 'ABCRepro-Regular', sans-serif;
