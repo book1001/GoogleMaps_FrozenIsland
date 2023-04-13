@@ -16,11 +16,13 @@
   }
 
   #latitude {
+    max-width: 364px;
     top: 41%;
     left: -164px;
   }
 
   #longitude {
+    max-width: 364px;
     top: 41%;
     right: -164px;
   }
