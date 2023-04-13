@@ -14,7 +14,8 @@
 
 @font-face {
   font-family: 'ABCRepro-Regular';
-  src: url('./font/ABCRepro-Regular.otf') format('otf');
+  src:  url('ABCRepro-Regular.woff2') format('woff2'),
+        url('ABCRepro-Regular.woff') format('woff');
 }
 
 
@@ -46,7 +47,7 @@
 
 /* font: info ================================================ */
 .font-info {
-  font-family: ABCRepro-Regular,sans-serif;
+  font-family: 'ABCRepro-Regular', sans-serif;
   /* font-family: FKGroteskMonoTrial-Regular,sans-serif; */
   font-size: 14.4px;
   letter-spacing: 0.027em;
@@ -68,7 +69,7 @@
 
 /* font: latitude / longitude ================================================ */
 .font-latlong {
-  font-family: ABCRepro-Regular,sans-serif;
+  font-family: 'ABCRepro-Regular', sans-serif;
   /* font-family: FKGroteskMonoTrial-Regular,sans-serif; */
   font-size: 48px;
   margin-block-start: 0em;
@@ -85,7 +86,7 @@
 /* font: menu ================================================ */
 
 .font-menu{
-  font-family: FKGroteskMonoTrial-Regular,sans-serif;
+  font-family: 'FKGroteskMonoTrial-Regular', sans-serif;
   font-size: 14.4px;
   /* font-family: FKRomanStandardTrial-Regular,serif;
   font-size: 16px; */
@@ -120,7 +121,7 @@
 
 h3 {
     /* display: block; */
-    font-family: FKGroteskMonoTrial-Regular,sans-serif;
+    font-family: 'FKGroteskMonoTrial-Regular', sans-serif;
     font-size: 14.4px;
     /* font-family: FKRomanStandardTrial-Regular,serif;
     font-size: 16px; */
@@ -153,7 +154,7 @@ h3 {
 
 h4 {
     /* display: block; */
-    font-family: FKGroteskSemiMonoTrial-Regular,sans-serif;
+    font-family: 'FKGroteskSemiMonoTrial-Regular', sans-serif;
     font-size: 14.4px;
     /* font-family: FKRomanStandardTrial-Regular,serif;
     font-size: 16px; */
@@ -178,7 +179,7 @@ h4 {
 
 
 .font-body{
-  font-family: FKGroteskMonoTrial-Regular,sans-serif;
+  font-family: 'FKGroteskMonoTrial-Regular', sans-serif;
   font-size: 14.4px;
 
   line-height: 1.5;
