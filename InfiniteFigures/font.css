@@ -1,0 +1,100 @@
+/* Font ================================================ */
+@font-face {
+  font-family : 'BallPill-regular';
+  src: url("./font/BallPill-regular.woff") format('woff');
+  src: url("./font/BallPill-regular.woff2") format('woff2');
+}
+
+/* @font-face {
+  font-family : 'abd-regular';
+  src: url("./font/abd-regular.woff") format('woff')
+}
+
+@font-face {
+  font-family: 'ABCRepro-Regular';
+  src:  url('./fonts/ABCRepro-Regular.woff2') format('woff2'),
+        url('./fonts/ABCRepro-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'FKGroteskMonoTrial-Regular';
+  src: url('./font/FKGroteskMonoTrial-Regular.woff') format('woff');
+  src: url('./font/FKGroteskMonoTrial-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'FKGroteskSemiMonoTrial-Regular';
+  src: url('./font/FKGroteskSemiMonoTrial-Regular.woff') format('woff');
+  src: url('./font/FKGroteskSemiMonoTrial-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'FKRasterGroteskTrial-Blended';
+  src: url('./font/FKRasterGroteskTrial-Blended.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'FKRasterGroteskTrial-Sharp';
+  src: url('./font/FKRasterGroteskTrial-Sharp.otf') format('otf');
+}
+
+@font-face {
+  font-family : 'grob-regular';
+  src: url("./font/grob-regular.woff2") format('woff2');
+}
+
+@font-face {
+  font-family : 'FMPointifax-A';
+  src: url("./font/FMPointifax-A.ttf") format('ttf');
+}
+
+@font-face {
+  font-family : 'Everett';
+  src: url("./font/Everett-Jana.otf") format('otf');
+} */
+
+
+/* Font: align ================================================ */
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+/* Font: print ================================================ */
+.font-print {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  bottom: 0px;
+  left: 4px;
+  font-family: 'BallPill-regular', sans-serif;
+  /* font-family: 'FKRasterGroteskTrial-Blended', sans-serif; */
+  font-size: 17px;
+  color: #000000;
+  z-index: 1000;
+  vertical-align: baseline;
+}
+
+/* Font: print ================================================ */
+.font-date {
+  display: inline-block;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 5px;
+  bottom: 5px;
+  z-index: 1000;
+  font-family: 'BallPill-regular', sans-serif;
+  font-variation-settings: "wght" 400;
+  font-size: 45px;
+  color: white;
+  font-optical-sizing: auto;
+  line-height: 1;
+  mix-blend-mode: difference;
+  vertical-align: baseline;
+}

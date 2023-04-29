@@ -1,0 +1,70 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #000000;
+}
+
+/* P5js ================================================ */
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50% !important;
+  height: 50% !important;
+  transform: translate(50%, 50%) scale(2, 2);
+}
+
+.yes-print{
+  display: none;
+}
+
+
+/* Media: Print ================================================ */
+
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
+
+  .yes-print {
+    display: block;
+  }
+
+  canvas {
+    transform: translate(50%, 50%) scale(2, 2);
+    height: calc(50% - 3mm) !important;
+  }
+
+  /* @page {
+    size: A4 landscape;
+  } */
+
+  .font-print {
+    position: fixed !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    bottom: 0px !important;
+    left: 4px;
+    font-family: 'Everett';
+    font-size: 9px;
+    color: #000000;
+    font-optical-sizing: auto;
+    line-height: auto !important;
+    mix-blend-mode: none !important;
+  }
+
+  .font-date {
+    position: fixed !important;
+    bottom: 0px !important;
+    right: 0px !important;
+    font-family: 'Everett' !important;
+    font-size: 9px !important;
+    color: #000000 !important;
+    font-optical-sizing: auto;
+    line-height: auto !important;
+    mix-blend-mode: none !important;
+  }
+}
