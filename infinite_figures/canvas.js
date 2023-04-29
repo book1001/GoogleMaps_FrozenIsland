@@ -5,8 +5,8 @@ const vScale = 6;
 
 const sampleSize = 5;
 const camWidth = 400;
-const camHeight = 400;
-// const camHeight = 280;
+// const camHeight = 400;
+const camHeight = 280;
 
 const maxColor = 765;// 255*3
 let proportion = camWidth / camHeight;
