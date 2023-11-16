@@ -237,7 +237,7 @@ button.gm-ui-hover-effect {
   box-shadow: rgb(0 0 0 /0%) 0px 1px 4px -1px !important;
   width: 50px !important;
   height: 50px !important;
-  margin-left: -10px;
+  margin-left: -10px !important;
   z-index: 10000000 !important;
 
   left: 8px !important;
